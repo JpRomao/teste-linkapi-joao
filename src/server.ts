@@ -13,9 +13,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-insertAllOrderedOnDay().start();
-
 app.use(router);
+
+insertAllOrderedOnDay().start();
 
 app.listen(process.env.SERVER_PORT, () =>
   console.log(`Server listening on port ${process.env.SERVER_PORT}!`)
