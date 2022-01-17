@@ -17,6 +17,6 @@ app.use(router);
 
 insertAllOrderedOnDay().start();
 
-app.listen(process.env.SERVER_PORT, () =>
+app.listen(process.env.SERVER_PORT || 5000, () =>
   console.log(`Server listening on port ${process.env.SERVER_PORT}!`)
 );
