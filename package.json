@@ -1,0 +1,43 @@
+{
+  "name": "backend-linkapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts",
+    "build": "tsc --build",
+    "lint": "eslint ./src",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "mongodb": "^3.6.10",
+    "mongoose": "^6.1.6",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/cron": "^1.7.3",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/mongodb": "^3.6.20",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^16.3.0",
+    "@types/xml2js": "^0.4.9",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  }
+}
