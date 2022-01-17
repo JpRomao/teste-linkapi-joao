@@ -6,6 +6,18 @@
   O projeto é um teste para a API do Pipedrive em conjunto com Bling. Insere os dados de uma venda no Pipedrive no Bling e guarda no MongoDB, é possível visualizar os ganhos totais dos dias anteriores.
 </p>
 
+<p align="center">
+  A <a href="https://link-api-teste.herokuapp.com/">API</a> está disponível para testes.
+</p>
+
+<p>Possui as seguintes rotas:</p>
+<ul>
+  <li>
+    /opportunities
+    <p>Permite visualizar os negócios da conta do pipedrive que estão listadas no bling e guardadas no banco de dados.</p>
+  </li>
+</ul>
+
 <h3>
   Requisitos da aplicação
 </h3>
@@ -62,4 +74,4 @@ $ npm run dev
 # O servidor inciará na porta:3333 - acesse <http://localhost:3333>
 ```
 
-Se preferir utilizar o insomnia para testar a aplicação, utilize o seguinte link:
+Para testar a aplicação sem instalar nada, utilize o seguinte link: https://link-api-teste.herokuapp.com/
